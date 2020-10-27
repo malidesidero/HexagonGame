@@ -117,7 +117,7 @@ public class NodeManager : MonoBehaviour
             cocuk.GetComponent<Hex>().transform.parent = hexGridScript.transform; // çocukları silme
         }
     }
-    private void SelectAnNode(GameObject selectedNode)
+    private void SelectAnNode(GameObject selectedNode) // Düğüm seçme
     {
         
             DestroyOldSelected();
@@ -137,7 +137,7 @@ public class NodeManager : MonoBehaviour
 
     }
 
-    private void unSelectAnNode(GameObject selectedNode)
+    private void unSelectAnNode(GameObject selectedNode) // Düğüm seçimini silme
     {
         if (selectedNode.GetComponent<Node>().column % 2 == 0 && selectedNode.GetComponent<Node>().row % 2 == 0)
             border = 2;
